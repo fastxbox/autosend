@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.1"
+    defaultConfig {
+        applicationId "com.fastxboxs.autosendwechatmsg"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+//    signingConfigs {
+//        myConfig {
+//            keyAlias 'ishehuiShop'
+//            keyPassword '123456'
+//            storeFile file('key.keystore')
+//            storeFile getKeyStoreFile()
+//            storePassword '123456'
+//        }
+//    }
+//    compileOptions {
+//        sourceCompatibility 1.8
+//        targetCompatibility 1.8
+//    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'org.jetbrains:annotations-java5:15.0'
+    androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+//    testCompile 'junit:junit:4.12'
+    //https://github.com/square/okhttp
+//    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+//    //https://github.com/JakeWharton/butterknife
+//    api 'com.jakewharton:butterknife:8.5.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //https://github.com/Blankj/AndroidUtilCode/blob/master/lib/utilcode/README-CN.md
+    implementation 'com.blankj:utilcode:1.29.0'
+    implementation 'com.alibaba:fastjson:1.1.67.android'
+
+    // https://blog.csdn.net/yang_study_first/article/details/102566950
+    implementation 'org.projectlombok:lombok:1.18.16'
+    annotationProcessor 'org.projectlombok:lombok:1.18.16'
+}

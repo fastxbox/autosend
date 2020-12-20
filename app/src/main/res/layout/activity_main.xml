@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp">
+
+        <TextView
+            android:id="@+id/wechatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="发送对象:" />
+
+        <EditText
+            android:id="@+id/sendName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/wechatName"
+            android:text="测试喽" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/wechatContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="发送内容:" />
+
+
+        <EditText
+            android:id="@+id/sendContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/wechatContent"
+            android:text="测试发微信" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp">
+        <TextView
+            android:id="@+id/wechatStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="辅助功能:" />
+        <TextView
+            android:id="@+id/sendStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/wechatStatus" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sendSysSet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#E63232"
+        android:gravity="center"
+        android:text="系统辅助功能开关"
+        android:textColor="#ffffff" />
+    <TextView android:id="@+id/spinnerTextWework"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="企业微信"></TextView>
+    <Spinner android:id="@+id/spinnerWeWork"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></Spinner>
+    <TextView
+        android:id="@+id/sendWework"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#E63232"
+        android:gravity="center"
+        android:text="企业微信开始"
+        android:textColor="#ffffff" />
+
+
+    <TextView android:id="@+id/spinnerTextDianping"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="大众点评"></TextView>
+    <Spinner android:id="@+id/spinnerDianping"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></Spinner>
+    <TextView
+        android:id="@+id/sendDianping"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        android:background="#E63232"
+        android:gravity="center"
+        android:text="大众点评开始"
+        android:textColor="#ffffff" />
+<!--    <TextView-->
+<!--        android:id="@+id/testWechat"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:background="#E63232"-->
+<!--        android:gravity="center"-->
+<!--        android:text="发送"-->
+<!--        android:textColor="#ffffff" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/sendWechatMultiText"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:background="#E63232"-->
+<!--        android:gravity="center"-->
+<!--        android:text="自动营销"-->
+<!--        android:textColor="#ffffff" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/sendWechatPhoto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:background="#E63232"-->
+<!--        android:gravity="center"-->
+<!--        android:text="发图片"-->
+<!--        android:textColor="#ffffff" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/checkMsg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:background="#E63232"-->
+<!--        android:gravity="center"-->
+<!--        android:text="消息检查"-->
+
+<!--        android:textColor="#ffffff" />-->
+
+
+
+</LinearLayout>
